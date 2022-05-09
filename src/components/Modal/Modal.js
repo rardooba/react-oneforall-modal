@@ -16,3 +16,4 @@ export const Modal = ({ onClose, children, isOpen, bgColor }) => {
       </>
     );
   };
+
