@@ -13,9 +13,20 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-lib": "rollup -c"
+    "build-lib": "esm rollup -c"
   },
   "author": "Aboudrare Maïssoum",
+  "keywords": [
+    "react",
+    "modal",
+    "plugin",
+    "minimalist",
+    "simple",
+    "storybook",
+    "rollup",
+    "babel",
+    "proptypes"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.17.10",
@@ -42,6 +53,7 @@
     "react-dom": "^18.1.0"
   },
   "dependencies": {
+    "esm": "^3.2.25",
     "prop-types": "^15.8.1"
   }
 }
