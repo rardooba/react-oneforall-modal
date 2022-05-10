@@ -1,4 +1,5 @@
 import babel from 'rollup-plugin-babel'
+import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import external from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
@@ -29,6 +30,14 @@ export default [
         }),
         external(),
         resolve(),
+        commonjs({
+          namedExports: {
+            'react-js': ['default'],
+          },
+          include: [
+            /node_modules\/prop-types/,
+          ],
+        }),
         terser(),
       ]
     }

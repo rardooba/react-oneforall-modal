@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "../../styles.css"
-export const Modal = ({ onClose, children, isOpen, bgColor }) => {
+export const Modal = ({ onClose, children, isOpen, bgColor= "#0a8128" }) => {
     return (
       <>
         {isOpen && (
@@ -17,3 +18,14 @@ export const Modal = ({ onClose, children, isOpen, bgColor }) => {
     );
   };
 
+Modal.PropTypes = {
+  onClose: PropTypes.func.isRequired,
+  children: PropTypes.element.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  bgColor: PropTypes.string,
+
+}
+
+Modal.defaultProps = {
+  bgColor: '#0a8128'
+};
