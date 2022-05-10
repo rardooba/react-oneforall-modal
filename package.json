@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-lib": "esm rollup -c"
+    "build-lib": "rollup -c"
   },
   "author": "Aboudrare Maïssoum",
   "keywords": [
@@ -31,7 +31,6 @@
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/preset-react": "^7.16.7",
-    "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@storybook/addon-actions": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.22",
@@ -51,9 +50,5 @@
   "peerDependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
-  },
-  "dependencies": {
-    "esm": "^3.2.25",
-    "prop-types": "^15.8.1"
   }
 }
