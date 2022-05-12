@@ -24,8 +24,7 @@
     "simple",
     "storybook",
     "rollup",
-    "babel",
-    "proptypes"
+    "babel"
   ],
   "license": "MIT",
   "devDependencies": {

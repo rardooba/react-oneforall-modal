@@ -1,7 +1,6 @@
 # Modal plugin for React
 
-This is a simple react modal component that you can use in any project.
-The modal adds itself to the DOM as a fixed position element so you can add it to any component on your app.
+This is a simple react modal component that you can use in your project. The modal is added to the foreground DOM as a fixed-position with a transparent overlay. Do not hesitate to give me feedback so that we can improve this component together. `#oneforallallforone`
 
 ## Features
 
