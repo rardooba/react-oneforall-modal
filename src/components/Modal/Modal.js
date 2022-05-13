@@ -1,7 +1,13 @@
 import React, { useCallback, useEffect } from 'react';
 import "../../styles.css"
+
+//------------------------------------------------------------//
+
 export const Modal = ({ onClose, children, isOpen, bgColor= "#0a8128" }) => {
 
+  /**
+   * Callback f(x) to manage the key pressed by the user > here the escape key
+   */
   const handleKeyDown = useCallback((e) => {
     e.key === 'Escape' && onClose()
    }, [onClose])
